@@ -1,7 +1,10 @@
 import React from "react";
+import ImageBox from "../ImageBox";
 
-function GalleryPage() {
-
+function DisplayGallery() {
+    return (
+        <ImageBox/>
+    );
 }
 
-export default GalleryPage;
+export default DisplayGallery;
