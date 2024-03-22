@@ -12,6 +12,10 @@ import ContactPage from "./pages/Contact";
 
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+
+import Footer from "./Footer";
+
 
 function Main() {
     return (
@@ -20,16 +24,16 @@ function Main() {
                 <>
                     <div>
                         <div className="one3media-header">
-                            <title>ONE3MEDIA</title>
-                            <h3>Professional Film/Photo</h3>
+                            <Typography sx={{ color: "grey", fontWeight: 'medium', fontSize: 35, textAlign: 'center', padding: '25px', textDecoration: 'underline'}}>ONE3MEDIA | Professional Film/Photography</Typography>
                             <ul id="one3media-nav">
-                            <Stack direction="row" spacing={2}>
+                            <Stack direction="row" spacing={4}>
                                 <Button><li><NavLink to="/">Home</NavLink></li></Button>
-                                <Button><Button> <li><NavLink to="/Packages">Packages</NavLink></li></Button>
+                                <Button><li><NavLink to="/Wedding Packages">Wedding Packages</NavLink></li></Button>
                                 <Button><li><NavLink to="/Gallery">Gallery</NavLink></li></Button>
-                                <Button></Button><li><NavLink to="/Contact">Contact</NavLink></li></Button>
+                                <Button><li><NavLink to="/Contact">Contact</NavLink></li></Button>
                             </Stack>
                             </ul>
+                            <Footer/>
                         </div>
                         <div className="content">
                             <Routes>
@@ -42,6 +46,7 @@ function Main() {
                     </div>
                 </>
             </HashRouter>
+            {/* <Footer/> */}
         </>
     );
 }
