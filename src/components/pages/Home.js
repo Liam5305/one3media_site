@@ -1,12 +1,10 @@
 import React from "react";
-
+import AboutMe from "../AboutMe";
 
 function HomePage() {
 
     return (
-        <>
-            <h1>Test</h1>
-        </>
+        <AboutMe />
     );
 }
 
