@@ -15,6 +15,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 import Footer from "./Footer";
+import BackDrop from "./BackgroundDrop";
 
 
 function Main() {
@@ -28,7 +29,7 @@ function Main() {
                             <ul id="one3media-nav">
                             <Stack direction="row" spacing={4}>
                                 <Button><li><NavLink to="/">Home</NavLink></li></Button>
-                                <Button><li><NavLink to="/Wedding Packages">Wedding Packages</NavLink></li></Button>
+                                <Button><li><NavLink to="/Packages">Wedding Packages</NavLink></li></Button>
                                 <Button><li><NavLink to="/Gallery">Gallery</NavLink></li></Button>
                                 <Button><li><NavLink to="/Contact">Contact</NavLink></li></Button>
                             </Stack>
@@ -46,6 +47,7 @@ function Main() {
                     </div>
                 </>
             </HashRouter>
+            <BackDrop/>
             {/* <Footer/> */}
         </>
     );
