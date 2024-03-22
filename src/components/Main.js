@@ -14,8 +14,9 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import Footer from "./Footer";
-import BackDrop from "./BackgroundDrop";
+import MediaBtns from "./SocialMediaBtns";
+import BtmFooter from "./Footer";
+
 
 
 function Main() {
@@ -25,16 +26,18 @@ function Main() {
                 <>
                     <div>
                         <div className="one3media-header">
-                            <Typography sx={{ color: "grey", fontWeight: 'medium', fontSize: 35, textAlign: 'center', padding: '25px', textDecoration: 'underline'}}>ONE3MEDIA | Professional Film/Photography</Typography>
+                            <Typography sx={{ color: "black", fontWeight: 'medium', fontSize: 35, textAlign: 'center', padding: '25px', textDecoration: 'underline'}}
+                            >ONE3MEDIA | Professional Photography</Typography>
                             <ul id="one3media-nav">
                             <Stack direction="row" spacing={4}>
                                 <Button><li><NavLink to="/">Home</NavLink></li></Button>
                                 <Button><li><NavLink to="/Packages">Wedding Packages</NavLink></li></Button>
                                 <Button><li><NavLink to="/Gallery">Gallery</NavLink></li></Button>
                                 <Button><li><NavLink to="/Contact">Contact</NavLink></li></Button>
+                                
                             </Stack>
                             </ul>
-                            <Footer/>
+                            <MediaBtns/>
                         </div>
                         <div className="content">
                             <Routes>
@@ -47,8 +50,7 @@ function Main() {
                     </div>
                 </>
             </HashRouter>
-            <BackDrop/>
-            {/* <Footer/> */}
+            <BtmFooter/>
         </>
     );
 }

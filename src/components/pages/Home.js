@@ -1,11 +1,12 @@
 import React from "react";
-import AboutMe from "../AboutMe";
+import AboutContent from "../AboutContent";
 
-function HomePage() {
-
-    return (
-        <AboutMe />
-    );
+function AboutMe() {
+  return (
+    <>
+      <AboutContent/>
+    </>
+  );
 }
 
-export default HomePage;
+export default AboutMe;

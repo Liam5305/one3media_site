@@ -19,17 +19,9 @@ main {
 }
 
 ul {
-  text-decoration: none;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
-}
-
-.MuiListItem-button:hover {
-  background-color: rgba(0, 0, 0, 0.12) !important;
-}
-.MuiTouchRipple-rippleVisible {
-  color: #005d83 !important;
 }
 
 .one3media-header a {
@@ -46,6 +38,26 @@ ul {
   width: 400px;
   overflow: hidden;
   list-style-type: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.one3media-header li:hover {
+  background-color: rgb(252, 252, 252);
+}
+
+.footer {
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  font-size: 25px;
+}
+
+.main-content {
+  flex-grow: 1;
 }
 
 /* .one3media-header a:link {
@@ -66,8 +78,3 @@ ul {
 .one3media-header a:active {
   text-decoration: none;
 } */
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
