@@ -18,6 +18,10 @@ main {
   text-decoration: underline;
 }
 
+.header-title {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 ul {
   padding: 0px;
   margin: 0px;
@@ -43,13 +47,13 @@ ul {
   color: white;
 }
 
-.one3media-header li:hover {
+/* .one3media-header li:hover {
   background-color: rgb(252, 252, 252);
-}
+} */
 
 .footer {
   background-color: grey;
-  position: fixed;
+  position: sticky;
   width: 100%;
   bottom: 0;
   color: white;
@@ -73,8 +77,9 @@ ul {
 
 .one3media-header a:visited {
   text-decoration: none;
-}
+} */
 
 .one3media-header a:active {
-  text-decoration: none;
-} */
+  background-color: rgba(158, 158, 158);
+  text-decoration: underline;
+} 

@@ -12,7 +12,7 @@ function Footer() {
     <>
       <div className="footer-socials">
             <Grid container sx={{ color: "grey" }}>
-            <Grid container spacing={1} minHeight={70} display={"flex"} justifyContent={"center"} alignItems={"center"} >
+            <Grid container spacing={1} margin={"10px"} minHeight={70} display={"flex"} justifyContent={"center"} alignItems={"center"} >
                 <Grid xs={1}>
                   <a href="https://www.facebook.com">
                     <FacebookIcon />
